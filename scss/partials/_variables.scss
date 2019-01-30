@@ -1,0 +1,56 @@
+// === THEME ===
+// Allowed values: Dark, Light, Fire, Default
+$theme: Light;
+
+// Allowed values: blue-beans,rogers-rovers, pastry-pizza
+$brand: rogers-rovers;
+
+// === COLORS ===
+$text-color: #222222;
+$body-background-color: #fff;
+$theme-color: #170a48;
+$secondary-color: #f27731;
+$ternary-color: #ccf962;
+$link-color: $secondary-color;
+$menu-item-color: white;
+$hover-color: #fefefe;
+$side-bar-hover-color: #efefef;
+
+@if $theme == Dark {
+  $text-color: #fff;
+  $body-background-color: #22222a;
+  $theme-color: #42424a;
+  $secondary-color: #c24721;
+  $ternary-color: #698932;
+  $link-color: $secondary-color;
+  $menu-item-color: white;
+} @else if $theme == Light {
+  $text-color: #000;
+  $body-background-color: #fff;
+  $theme-color: #372a27;
+  $secondary-color: #d26741;
+  $ternary-color: #b9da63;
+  $link-color: $secondary-color;
+  $menu-item-color: white;
+}
+@else if $theme == Fire {
+  $text-color: orange;
+  $body-background-color: yellow;
+  $theme-color: red;
+  $secondary-color: red;
+  $ternary-color: red;
+  $link-color: purple;
+  $hover-color: $secondary-color;
+  $menu-item-color: pink;
+  $side-bar-hover-color: #FF69B4;
+}
+
+// === FONTS ===
+$text-font: "Alegreya Sans", Arial, sans-serif;
+$headline-font: "Titillium Web", Georgia, serif;
+
+// === SIZES ===
+$content-width: 960px;
+$header-height: 60px;
+$footer-height: 90px;
+$col: col-width($columns: 8);
